@@ -39,7 +39,8 @@ class ControllerExtensionPaymentPlatron extends Controller {
 			$ofdReceiptItem->amount = $this->session->data['shipping_method']['cost'];
 			$ofdReceiptItem->price = $this->session->data['shipping_method']['cost'];
 			$ofdReceiptItem->quantity = 1;
-			$ofdReceiptItem->vat = 18;
+			$ofdReceiptItem->vat = 20;
+			$ofdReceiptItem->type = 'service';
 			$ofdReceiptItems[] = $ofdReceiptItem;
 		}
 
